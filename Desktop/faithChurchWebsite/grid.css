@@ -1,0 +1,248 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #003355;
+}
+.nav-link{
+    color: #003360;
+    width: 154px;
+    height: 47px;
+    font-family: 'Microsoft New Tai Lue' !important;
+    font-style: regular;
+    font-weight: 0;
+    font-size: 24px;
+    line-height: 47px;
+    /* identical to box height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#003360 ;
+    float: right;
+    text-align: center;
+}
+.navbar {
+    background-color: #ffffff !important;
+    font-family: "Microsoft New Tai Lue", sans-serif;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #85c529;
+    display: flex;
+    
+}
+
+
+.nav-link:hover{
+    color: #ffffff !important;
+    background-color: #003360;
+    transition: 0.5s;
+    
+}
+.dropdown-item{
+    opacity: 85%;
+    color: #ffffff;
+    padding: 10px; /* Add some padding to center the text */
+}
+.dropdown-item:hover{
+    transition: 0.5s;
+    text-decoration: underline !important;
+}
+
+.dropdown-menu{
+    opacity: 85%;
+    background-color: #003355 ;
+    padding-right: 40px;
+}
+#nav{
+   justify-content: end;
+    float: right;
+}
+
+#staffCards {
+    display: grid;
+    height: 801;
+    width: 1408;
+    grid-template-areas: "chris billy steve" "marlin";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 20px;
+    margin-left: 65px;
+    margin-right: 40px;
+}
+
+.pastor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#chris-rouse { 
+    grid-area: "chris";
+}
+#billy-fuqua { 
+    grid-area: "billy";
+}
+#steve-oldham { 
+    grid-area: "steve";
+}
+#marlin-stroop{
+    grid-area: "marlin";
+}
+
+.figure {
+    position: relative;
+    width: 113px;
+    height: 30px;
+}
+
+.figure-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.card-img-top {
+    height: 175px;
+    width: 175px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 42px;
+    justify-content: center;
+    border: #003355 5px solid;
+    border-radius: 15px;
+}
+
+.card-flip {
+    height: 375px;
+    width: 325px;
+    border: #85c529 5px solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    perspective: 1000px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+
+}
+.staff-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+}
+
+.card-body{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvet;
+    font-size: 24px;
+    font-weight: bold;
+}
+.card-body h5{
+    font-family: "Helvetica Neue", Helvet;
+    font-weight: bold;
+    font-size: 24px;
+}
+.bio-button {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+.staff-card.is-flipped {
+    transform: rotateY(180deg);
+}
+.card-back .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.card-back .card-body p {
+    font-size: 18px;
+}
+footer {
+    background-color: #003360;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    border-top: #85c529 5px solid;  /* added padding to provide some spacing */
+    line-height: 1;
+}
+
+.footercolumn {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top:10px
+}
+
+
+.parentfootercolumn {
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px 160px 1fr;
+    grid-template-rows: 140px 10px;
+    justify-content: left;  /* changed to space-between to evenly distribute the columns */
+    text-align: start;  /* changed from end to start */
+    align-items: flex-start;
+    gap: 20px;  /* added to provide some space between the columns */
+}
+
+#footerimg {
+    padding: 10px;
+    height: 140px;
+    width: 140px;
+    display: block;  /* changed from float to block */
+    margin: 0 auto;  /* centers the image */
+    align-self: center;
+}
+.footer-right p{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.img-thumbnail{
+    border: #85c529 solid 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 0%;
+}
+
+.footercolumn a {
+    color: #FFFFFF;
+    text-decoration-line: none;
+    line-height: 0.4;
+    
+  }
+  .footer-header{
+    text-decoration: underline;
+  }
+
